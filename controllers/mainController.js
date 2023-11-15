@@ -1,11 +1,12 @@
-const path= require('path')
-
 const mainController={
     home:(req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/home.html'))
+       return res.render('home')
     },
     about: (req,res)=>{
-        res.sendFile(path.join(__dirname,'../views/about.html'))
+        return res.render('about')
+    },
+    register: (req,res)=>{
+        return res.render('register')
     }
 }
 

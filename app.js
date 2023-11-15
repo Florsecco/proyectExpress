@@ -10,4 +10,4 @@ app.listen(PORT,()=>{
 
 app.use(express.static('public'));
 
-app.use(rutaMain)
+app.use( '/',rutaMain)
